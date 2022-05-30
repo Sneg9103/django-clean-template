@@ -1,24 +1,22 @@
-Это чистый шаблон Django проекта, с которым можно быстро начать разработку. В шаблон входит конфиг Systemd, nginx, gunicorn.
+This is a clean Django project template to get you started quickly. The template includes config Systemd, nginx, gunicorn.
 
-[Видео](https://www.youtube.com/watch?v=uXTZMurM0FY)
-
-Установка представляет собой просто указание Python интерпретатора и названия домена, запустите:
+Installation is just specifying the Python interpreter and domain name, run:
 
 ```bash
 ./install.sh
 ```
 
-В конфиге Django заполните настройки базы данных (`src/config/settings.py`).
+In the Django config, fill in the database settings (`src/config/settings.py`).
 
-Посмотреть статус gunicorn демона:
+View the status of the gunicorn daemon:
 
 ```bash
 sudo systemctl status gunicorn
 ```
 
-Логи gunicorn'а лежат в `gunicorn/access.log` и `gunicorn/error.log`.
+Gunicorn's logs are in `gunicorn/access.log` и `gunicorn/error.log`.
 
-После изменения systemd конфига надо перечитать его и затем перезапустить юнит:
+After changing the systemd config, you need to re-read it and then restart the unit:
 
 ```bash
 sudo systemctl daemon-reload
