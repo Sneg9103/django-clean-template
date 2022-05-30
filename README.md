@@ -1,5 +1,3 @@
-This is a clean Django project template to get you started quickly. The template includes config Systemd, nginx, gunicorn.
-
 Installation is just specifying the Python interpreter and domain name, run:
 
 ```bash
