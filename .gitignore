@@ -12,6 +12,7 @@ logs/
 *.toc
 *.out
 *.pickle
+*.code-workspace
 celerybeat-schedule                                                                     
 .ipynb_checkpoints
 venv/
